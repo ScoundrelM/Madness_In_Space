@@ -31,9 +31,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\..\AddIns\NUnit-2.6.2\bin\nunit.framework.dll</HintPath>
-    </Reference>
+    <Reference Include="nunit.framework" />
     <Reference Include="System" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>Json\Bin\Net45\Newtonsoft.Json.dll</HintPath>
@@ -44,8 +42,13 @@
     <Compile Include="Factories\Ship_System_Factory.cs" />
     <Compile Include="Factories\Vessel_Factory.cs" />
     <Compile Include="Main_Collections\Atmosphere.cs" />
+    <Compile Include="Main_Collections\Bulkhead.cs" />
+    <Compile Include="Main_Collections\Hull.cs" />
+    <Compile Include="Main_Collections\Infrastructure.cs" />
     <Compile Include="Main_Collections\Room.cs" />
+    <Compile Include="Main_Collections\Shield.cs" />
     <Compile Include="Main_Collections\Ship_System.cs" />
+    <Compile Include="Main_Collections\Structure.cs" />
     <Compile Include="Main_Collections\Vessel.cs" />
     <Compile Include="Object_Properties_For_Collections\Atmosphere_Properties\Pressure_Property.cs" />
     <Compile Include="Object_Properties_For_Collections\General_Properties\Armour_Property.cs" />

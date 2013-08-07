@@ -5,7 +5,8 @@ using System;
 namespace Madness_In_Space
 {
 	/// <summary>
-	/// Description of Vessel.
+	/// The Vessel collection holds all of a ship's properties in a hash table.
+	/// 
 	/// </summary>
 	public class Vessel
 	{

@@ -14,6 +14,13 @@ namespace Madness_In_Space
 			room.Add ("Bounds", bounds );
 			room.Add ("Ship Local CoOrdinates", sCoOrd);
 			room.Add ("Type", type);
+//			room.Add("Bulkheads",new Hashtable());
+//			room.Add("Systems", new Hashtable());
+//			room.Add("Interfaces", new Hashtable());
+//			room.Add("Atmosphere",new Hashtable());
+//			room.Add("Owner Vessel",new string);
+			
+			//Room ID
 
 		}
 		

@@ -1,15 +1,14 @@
-﻿
-using System;
+﻿using System;
 
 namespace Madness_In_Space.Factories
 {
-	/// <summary>
-	/// Description of Room_Factory.
-	/// </summary>
 	public class Room_Factory
 	{
-		public Room_Factory()
+		public string roomID;
+		
+		public Room_Factory(Vessel_Factory vFactory)
 		{
+			this.roomID = "Room " + vFactory.ticker.issueNewID();
 		}
 	}
 }

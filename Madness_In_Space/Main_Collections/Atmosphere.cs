@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Madness_In_Space.Main_Collections
+namespace Madness_In_Space
 {
 	/// <summary>
 	/// Description of Atmosphere.
