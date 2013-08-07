@@ -1,0 +1,55 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Madness_In_Space\PropertiesTests.cs">
+    <Files>
+      <File FileName="Madness_In_Space\Program.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\PropertiesTests.cs" Line="71" Column="84" />
+      <File FileName="Madness_In_Space\Can_Mount_System_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Start_Ship_Coords_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\End_Ship_Coords_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Start_Room_Interface_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\End_Room_Interface_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Junction_List_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Junction_Direction_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Junction_Length_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Atmosphere_Or_Not_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Object_Properties_For_Collections\Universal_Co_Ordinates_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Object_Properties_For_Collections\Ship_Local_Co_Ordinates_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Object_Properties_For_Collections\Room_Local_Co_Ordinates_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Object_Properties_For_Collections\Type_ID_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Game_Object_Holder.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Room.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Object_Properties_For_Collections\Bounding_Dimensions_Property.cs" Line="1" Column="1" />
+      <File FileName="Madness_In_Space\Object_Properties_For_Collections\Breach_Size_Property.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Madness_In_Space" expanded="True">
+            <Node name="Object_Properties_For_Collections" expanded="True" />
+            <Node name="PropertiesTests.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True">
+          <Node name="Madness_In_Space" expanded="True">
+            <Node name="Madness_In_Space" expanded="True">
+              <Node name="PropertiesTests" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

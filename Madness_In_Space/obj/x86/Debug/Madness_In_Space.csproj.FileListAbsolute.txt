@@ -1,0 +1,9 @@
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\Madness_In_Space.exe
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\Madness_In_Space.pdb
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\Newtonsoft.Json.dll
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\nunit.framework.dll
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\Newtonsoft.Json.pdb
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\Newtonsoft.Json.xml
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.exe
+C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.pdb
