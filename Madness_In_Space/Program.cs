@@ -7,7 +7,8 @@ namespace Madness_In_Space
 		public static void Main (string[] args)
 		{
 			Console.WriteLine ("Hello World!");								
-			Console.ReadLine ();
+			Console.ReadLine();
+			
 		}
 	}
 }

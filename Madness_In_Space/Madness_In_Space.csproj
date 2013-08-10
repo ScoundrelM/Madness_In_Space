@@ -36,11 +36,19 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Json\Bin\Net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\Bulkhead_Factory.cs" />
+    <Compile Include="Factories\Infrastructure_Factory.cs" />
     <Compile Include="Factories\Room_Factory.cs" />
     <Compile Include="Factories\Ship_System_Factory.cs" />
     <Compile Include="Factories\Vessel_Factory.cs" />
+    <Compile Include="Forms\Vessel_Initial_Details_Input_Form.cs" />
+    <Compile Include="Forms\Vessel_Initial_Details_Input_Form.Designer.cs">
+      <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_Collections\Atmosphere.cs" />
     <Compile Include="Main_Collections\Bulkhead.cs" />
     <Compile Include="Main_Collections\Hull.cs" />
@@ -89,17 +97,20 @@
     <Compile Include="Object_Properties_For_Collections\System_Properties\Turn_On_Power_Consumption_Property.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\PropertiesTests.cs" />
-    <Compile Include="Tests\Room_Factory_Tests.cs" />
-    <Compile Include="Tests\Room_Tests.cs" />
-    <Compile Include="Tests\Ship_System_Tests.cs" />
-    <Compile Include="Tests\Vessel_Factory_Tests.cs" />
-    <Compile Include="Tests\Vessel_Tests.cs" />
+    <Compile Include="Tests\Factory Tests\Room_Factory_Tests.cs" />
+    <Compile Include="Tests\Factory Tests\Vessel_Factory_Tests.cs" />
+    <Compile Include="Tests\Main_Collection_Tests\Room_Tests.cs" />
+    <Compile Include="Tests\Main_Collection_Tests\Ship_System_Tests.cs" />
+    <Compile Include="Tests\Main_Collection_Tests\Vessel_Tests.cs" />
+    <Compile Include="Tests\Object_Properties_Tests\PropertiesTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Main_Collections" />
     <Folder Include="Factories" />
+    <Folder Include="Forms" />
+    <Folder Include="JSON_Type_Templates" />
+    <Folder Include="User_Interface" />
     <Folder Include="Object_Properties_For_Collections\" />
     <Folder Include="Object_Properties_For_Collections\General_Properties" />
     <Folder Include="Object_Properties_For_Collections\Infrastructure_Properties" />
@@ -107,5 +118,13 @@
     <Folder Include="Object_Properties_For_Collections\System_Properties" />
     <Folder Include="Object_Properties_For_Collections\Room_Properties" />
     <Folder Include="Tests" />
+    <Folder Include="Tests\Factory Tests" />
+    <Folder Include="Tests\Main_Collection_Tests" />
+    <Folder Include="Tests\Object_Properties_Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Vessel_Initial_Details_Input_Form.resx">
+      <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
