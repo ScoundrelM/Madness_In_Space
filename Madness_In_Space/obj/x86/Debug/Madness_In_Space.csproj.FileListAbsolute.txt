@@ -6,3 +6,12 @@ C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madnes
 C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.exe
 C:\Stuff that took up space on the desktop\CDZ\4.3\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.pdb
+X:\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\Madness_In_Space.exe
+X:\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\Madness_In_Space.pdb
+X:\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\nunit.framework.dll
+X:\CODEZ\Madness_In_Space\Madness_In_Space\bin\Debug\nunit.framework.xml
+X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.csprojResolveAssemblyReference.cache
+X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.Forms.Vessel_Initial_Details_Input_Form.resources
+X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.csproj.GenerateResource.Cache
+X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.exe
+X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.pdb
