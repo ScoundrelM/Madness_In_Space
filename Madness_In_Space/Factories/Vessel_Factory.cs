@@ -23,6 +23,7 @@ namespace Madness_In_Space
 			output.vesselProperties.Add("Unique ID", vType + " " + ticker.issueNewID());
 			output.vesselProperties.Add("Name",vesselName);
 			output.vesselProperties.Add("Type",new Type_ID_Property("Vessel", vType));
+			//allowed room list
 			output.vesselProperties.Add("Rooms", new Hashtable()); //Fill hash table using the RoomFactory
 			
 			output.vesselProperties.Add("Bounds",new Bounding_Dimensions_Property(0,0,0));

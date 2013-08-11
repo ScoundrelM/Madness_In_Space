@@ -15,3 +15,4 @@ X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.Forms.
 X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.csproj.GenerateResource.Cache
 X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.exe
 X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.pdb
+X:\CODEZ\Madness_In_Space\Madness_In_Space\obj\x86\Debug\Madness_In_Space.Forms.Room_Placement_Window.resources

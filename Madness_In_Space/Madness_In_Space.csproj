@@ -31,6 +31,9 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\JSON.net\Bin\Net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework" />
     <Reference Include="System" />
     <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -51,6 +54,7 @@
     <Compile Include="Forms\Vessel_Initial_Details_Input_Form.Designer.cs">
       <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="JSON_Recepticles\Vessel_Type_Data_From_JSON.cs" />
     <Compile Include="Main_Collections\Atmosphere.cs" />
     <Compile Include="Main_Collections\Bulkhead.cs" />
     <Compile Include="Main_Collections\Hull.cs" />
@@ -112,6 +116,7 @@
     <Folder Include="Factories" />
     <Folder Include="Forms" />
     <Folder Include="JSON_Type_Templates" />
+    <Folder Include="JSON_Recepticles" />
     <Folder Include="User_Interface" />
     <Folder Include="Object_Properties_For_Collections\" />
     <Folder Include="Object_Properties_For_Collections\General_Properties" />
@@ -131,5 +136,8 @@
     <EmbeddedResource Include="Forms\Vessel_Initial_Details_Input_Form.resx">
       <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JSON_Type_Templates\Vessel_Types.json" />
   </ItemGroup>
 </Project>
