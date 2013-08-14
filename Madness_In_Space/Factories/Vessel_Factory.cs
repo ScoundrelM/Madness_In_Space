@@ -18,15 +18,19 @@ namespace Madness_In_Space
 
 		public Vessel createNewVessel(string vType)
 		{
+		
+			Vessel_Type_Setter typeStats = new Vessel_Type_Setter(vType);
 			Vessel output = new Vessel();
 			
 			output.vesselProperties.Add("Unique ID", vType + " " + ticker.issueNewID());
 			output.vesselProperties.Add("Name",vesselName);
 			output.vesselProperties.Add("Type",new Type_ID_Property("Vessel", vType));
+			output.vesselProperties.Add("Room Budget", typeStats.roomBudget);
+			
 			//allowed room list
 			output.vesselProperties.Add("Rooms", new Hashtable()); //Fill hash table using the RoomFactory
 			
-			output.vesselProperties.Add("Bounds",new Bounding_Dimensions_Property(0,0,0));
+			output.vesselProperties.Add("Bounds",new Bounding_Dimensions_Property(typeStats.maxXBounds,typeStats.maxYBounds,typeStats.maxZBounds));
 			
 			output.vesselProperties.Add("Infrastructure",new Infrastructure());
 						
@@ -35,7 +39,7 @@ namespace Madness_In_Space
 			
 			output.vesselProperties.Add("Shield",new Shield()); //Only need shield is the right system is onboard
 			
-			output.vesselProperties.Add("Universal CoOrds",new Universal_Co_Ordinates_Property(vesselName,0,0,0,0,0,0));//This may possibly be better set by another part of the code.
+
 			
 			return output;
 		}

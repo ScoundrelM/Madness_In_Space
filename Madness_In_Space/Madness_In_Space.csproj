@@ -44,6 +44,7 @@
     <Compile Include="Factories\Bulkhead_Factory.cs" />
     <Compile Include="Factories\Infrastructure_Factory.cs" />
     <Compile Include="Factories\Room_Factory.cs" />
+    <Compile Include="Factories\Room_Placement_Tool.cs" />
     <Compile Include="Factories\Ship_System_Factory.cs" />
     <Compile Include="Factories\Vessel_Factory.cs" />
     <Compile Include="Forms\Room_Placement_Window.cs" />
@@ -55,6 +56,7 @@
       <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="JSON_Recepticles\Vessel_Type_Data_From_JSON.cs" />
+    <Compile Include="JSON_Type_Templates\Vessel_Type_Setter.cs" />
     <Compile Include="Main_Collections\Atmosphere.cs" />
     <Compile Include="Main_Collections\Bulkhead.cs" />
     <Compile Include="Main_Collections\Hull.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Factory Tests\Room_Factory_Tests.cs" />
+    <Compile Include="Tests\Factory Tests\Room_Placement_Tool_Tests.cs" />
     <Compile Include="Tests\Factory Tests\Vessel_Factory_Tests.cs" />
     <Compile Include="Tests\Main_Collection_Tests\Room_Tests.cs" />
     <Compile Include="Tests\Main_Collection_Tests\Ship_System_Tests.cs" />

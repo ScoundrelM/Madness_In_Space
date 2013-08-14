@@ -52,12 +52,14 @@ namespace Madness_In_Space.Forms
 			this.Vessel_Space_3D_Position = new System.Windows.Forms.Panel();
 			this.vesseltypehere = new System.Windows.Forms.Label();
 			this.Room_Budget_Label = new System.Windows.Forms.Label();
-			this.Room_Budget_Placeholder = new System.Windows.Forms.Panel();
 			this.listView2 = new System.Windows.Forms.ListView();
 			this.Chosen_Rooms_Label = new System.Windows.Forms.Label();
 			this.Add_Room_Button = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
+			this.Room_Budget_Indicator = new System.Windows.Forms.Label();
+			this.Vessel_Name_Label = new System.Windows.Forms.Label();
+			this.Vessel_Type_Label = new System.Windows.Forms.Label();
 			this.Room_properties_Group.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.Room_Z_Dimension)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Room_Y_Dimension)).BeginInit();
@@ -69,12 +71,13 @@ namespace Madness_In_Space.Forms
 			// 
 			// Vessel_Name_Indicator
 			// 
-			this.Vessel_Name_Indicator.Location = new System.Drawing.Point(53, 30);
+			this.Vessel_Name_Indicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Vessel_Name_Indicator.Location = new System.Drawing.Point(180, 27);
 			this.Vessel_Name_Indicator.Name = "Vessel_Name_Indicator";
-			this.Vessel_Name_Indicator.Size = new System.Drawing.Size(100, 23);
+			this.Vessel_Name_Indicator.Size = new System.Drawing.Size(289, 37);
 			this.Vessel_Name_Indicator.TabIndex = 0;
-			this.Vessel_Name_Indicator.Text = "shipnamehere";
-			this.Vessel_Name_Indicator.Click += new System.EventHandler(this.Label1Click);
+			this.Vessel_Name_Indicator.Text = "vesselnamehere";
+			this.Vessel_Name_Indicator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// Available_Rooms_Label
 			// 
@@ -183,11 +186,14 @@ namespace Madness_In_Space.Forms
 			// 
 			// vesseltypehere
 			// 
-			this.vesseltypehere.Location = new System.Drawing.Point(219, 30);
+			this.vesseltypehere.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.vesseltypehere.Location = new System.Drawing.Point(636, 33);
 			this.vesseltypehere.Name = "vesseltypehere";
-			this.vesseltypehere.Size = new System.Drawing.Size(100, 23);
+			this.vesseltypehere.Size = new System.Drawing.Size(289, 37);
 			this.vesseltypehere.TabIndex = 8;
 			this.vesseltypehere.Text = "vesseltypehere";
+			this.vesseltypehere.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.vesseltypehere.Click += new System.EventHandler(this.VesseltypehereClick);
 			// 
 			// Room_Budget_Label
 			// 
@@ -198,13 +204,6 @@ namespace Madness_In_Space.Forms
 			this.Room_Budget_Label.TabIndex = 9;
 			this.Room_Budget_Label.Text = "Room Budget:";
 			this.Room_Budget_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Room_Budget_Placeholder
-			// 
-			this.Room_Budget_Placeholder.Location = new System.Drawing.Point(375, 82);
-			this.Room_Budget_Placeholder.Name = "Room_Budget_Placeholder";
-			this.Room_Budget_Placeholder.Size = new System.Drawing.Size(59, 34);
-			this.Room_Budget_Placeholder.TabIndex = 10;
 			// 
 			// listView2
 			// 
@@ -252,17 +251,49 @@ namespace Madness_In_Space.Forms
 			this.button3.Text = "FINISH ROOM PLACEMENT";
 			this.button3.UseVisualStyleBackColor = true;
 			// 
+			// Room_Budget_Indicator
+			// 
+			this.Room_Budget_Indicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Room_Budget_Indicator.Location = new System.Drawing.Point(375, 82);
+			this.Room_Budget_Indicator.Name = "Room_Budget_Indicator";
+			this.Room_Budget_Indicator.Size = new System.Drawing.Size(73, 34);
+			this.Room_Budget_Indicator.TabIndex = 16;
+			this.Room_Budget_Indicator.Text = "0";
+			this.Room_Budget_Indicator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// Vessel_Name_Label
+			// 
+			this.Vessel_Name_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Vessel_Name_Label.Location = new System.Drawing.Point(12, 27);
+			this.Vessel_Name_Label.Name = "Vessel_Name_Label";
+			this.Vessel_Name_Label.Size = new System.Drawing.Size(162, 37);
+			this.Vessel_Name_Label.TabIndex = 17;
+			this.Vessel_Name_Label.Text = "Vessel Name:";
+			this.Vessel_Name_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// Vessel_Type_Label
+			// 
+			this.Vessel_Type_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Vessel_Type_Label.Location = new System.Drawing.Point(475, 33);
+			this.Vessel_Type_Label.Name = "Vessel_Type_Label";
+			this.Vessel_Type_Label.Size = new System.Drawing.Size(155, 37);
+			this.Vessel_Type_Label.TabIndex = 18;
+			this.Vessel_Type_Label.Text = "Vessel Type:";
+			this.Vessel_Type_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
 			// Room_Placement_Window
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1010, 755);
+			this.Controls.Add(this.Vessel_Type_Label);
+			this.Controls.Add(this.Vessel_Name_Label);
+			this.Controls.Add(this.Room_Budget_Indicator);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.Add_Room_Button);
 			this.Controls.Add(this.Chosen_Rooms_Label);
 			this.Controls.Add(this.listView2);
-			this.Controls.Add(this.Room_Budget_Placeholder);
 			this.Controls.Add(this.Room_Budget_Label);
 			this.Controls.Add(this.vesseltypehere);
 			this.Controls.Add(this.Vessel_Space_3D_Position);
@@ -287,12 +318,14 @@ namespace Madness_In_Space.Forms
 			((System.ComponentModel.ISupportInitialize)(this.Vessel_X_Position)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Label Vessel_Type_Label;
+		private System.Windows.Forms.Label Vessel_Name_Label;
+		private System.Windows.Forms.Label Room_Budget_Indicator;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button Add_Room_Button;
 		private System.Windows.Forms.Label Chosen_Rooms_Label;
 		private System.Windows.Forms.ListView listView2;
-		private System.Windows.Forms.Panel Room_Budget_Placeholder;
 		private System.Windows.Forms.Label Room_Budget_Label;
 		private System.Windows.Forms.Label vesseltypehere;
 		private System.Windows.Forms.Panel Vessel_Space_3D_Position;
@@ -309,5 +342,10 @@ namespace Madness_In_Space.Forms
 		private System.Windows.Forms.ListView listView1;
 		private System.Windows.Forms.Label Available_Rooms_Label;
 		private System.Windows.Forms.Label Vessel_Name_Indicator;
+		
+		void VesseltypehereClick(object sender, System.EventArgs e)
+		{
+			
+		}
 	}
 }

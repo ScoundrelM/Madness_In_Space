@@ -2,6 +2,8 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
+
 
 namespace Madness_In_Space.JSON_Recepticles
 {
@@ -18,14 +20,7 @@ namespace Madness_In_Space.JSON_Recepticles
 			
 		public Vessel_Type_Data_From_JSON(string typeToGet)
 		{
-			//JObject dataIn = JObject.Parse(@"X:\CODEZ\Madness_In_Space\Madness_In_Space\JSON_Type_Templates\Vessel_Types.json");
-			
-			using (StreamReader reader = File.OpenText(@"c:\person.json"))
-			{
-				JObject o = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
-				// do stuff
-			}
-			
+			//I admit temporary defeat JSON can be revisited after I do all the types in-line.
 		}
 	}
 }
