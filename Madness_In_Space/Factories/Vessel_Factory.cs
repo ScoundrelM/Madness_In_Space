@@ -26,6 +26,10 @@ namespace Madness_In_Space
 			output.vesselProperties.Add("Name",vesselName);
 			output.vesselProperties.Add("Type",new Type_ID_Property("Vessel", vType));
 			output.vesselProperties.Add("Room Budget", typeStats.roomBudget);
+			output.vesselProperties.Add("Banned Rooms", typeStats.bannedRooms);
+			output.vesselProperties.Add("Required Rooms",typeStats.requiredRooms);
+			output.vesselProperties.Add("Available Rooms",typeStats.availableRooms);
+			output.vesselProperties.Add("Type Description",typeStats.typeDescription);
 			
 			//allowed room list
 			output.vesselProperties.Add("Rooms", new Hashtable()); //Fill hash table using the RoomFactory

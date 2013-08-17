@@ -56,6 +56,7 @@
       <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="JSON_Recepticles\Vessel_Type_Data_From_JSON.cs" />
+    <Compile Include="JSON_Type_Templates\Room_Type_Setter.cs" />
     <Compile Include="JSON_Type_Templates\Vessel_Type_Setter.cs" />
     <Compile Include="Main_Collections\Atmosphere.cs" />
     <Compile Include="Main_Collections\Bulkhead.cs" />

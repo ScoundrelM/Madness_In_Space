@@ -9,11 +9,7 @@ namespace Madness_In_Space
 		public float y;
 		public float z;
 
-		public float rotx;
-		public float roty;
-		public float rotz;
-
-		public Ship_Local_Co_Ordinates_Property (string ship, float xx, float yy, float zz, float rx, float ry, float rz)
+		public Ship_Local_Co_Ordinates_Property (string ship, float xx, float yy, float zz)
 		{
 			this.ownerVessel = ship;
 
@@ -21,9 +17,6 @@ namespace Madness_In_Space
 			this.y = yy;
 			this.z = zz;
 
-			this.rotx = rx;
-			this.roty = ry;
-			this.rotz = rz;
 		}
 	}
 }
