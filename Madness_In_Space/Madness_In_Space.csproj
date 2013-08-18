@@ -31,21 +31,19 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\JSON.net\Bin\Net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework" />
     <Reference Include="System" />
     <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factories\Bulkhead_Factory.cs" />
     <Compile Include="Factories\Infrastructure_Factory.cs" />
     <Compile Include="Factories\Room_Factory.cs" />
     <Compile Include="Factories\Room_Placement_Tool.cs" />
-    <Compile Include="Factories\Ship_System_Factory.cs" />
+    <Compile Include="Factories\Vessel_System_Factory.cs" />
     <Compile Include="Factories\Vessel_Factory.cs" />
     <Compile Include="Forms\Room_Placement_Window.cs" />
     <Compile Include="Forms\Room_Placement_Window.Designer.cs">
@@ -55,16 +53,17 @@
     <Compile Include="Forms\Vessel_Initial_Details_Input_Form.Designer.cs">
       <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="JSON_Recepticles\Vessel_Type_Data_From_JSON.cs" />
-    <Compile Include="JSON_Type_Templates\Room_Type_Setter.cs" />
-    <Compile Include="JSON_Type_Templates\Vessel_Type_Setter.cs" />
+    <Compile Include="Type_Setters\Room_Type_Setter.cs" />
+    <Compile Include="Type_Setters\Vessel_System_Type_Setter.cs" />
+    <Compile Include="Type_Setters\Vessel_Type_Setter.cs" />
     <Compile Include="Main_Collections\Atmosphere.cs" />
     <Compile Include="Main_Collections\Bulkhead.cs" />
     <Compile Include="Main_Collections\Hull.cs" />
     <Compile Include="Main_Collections\Infrastructure.cs" />
+    <Compile Include="Main_Collections\InfrastructureInterface.cs" />
     <Compile Include="Main_Collections\Room.cs" />
     <Compile Include="Main_Collections\Shield.cs" />
-    <Compile Include="Main_Collections\Ship_System.cs" />
+    <Compile Include="Main_Collections\Vessel_System.cs" />
     <Compile Include="Main_Collections\Structure.cs" />
     <Compile Include="Main_Collections\Vessel.cs" />
     <Compile Include="Object_Properties_For_Collections\Atmosphere_Properties\Pressure_Property.cs" />
@@ -119,7 +118,7 @@
     <Folder Include="Main_Collections" />
     <Folder Include="Factories" />
     <Folder Include="Forms" />
-    <Folder Include="JSON_Type_Templates" />
+    <Folder Include="Type_Setters" />
     <Folder Include="JSON_Recepticles" />
     <Folder Include="User_Interface" />
     <Folder Include="Object_Properties_For_Collections\" />
@@ -140,8 +139,5 @@
     <EmbeddedResource Include="Forms\Vessel_Initial_Details_Input_Form.resx">
       <DependentUpon>Vessel_Initial_Details_Input_Form.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="JSON_Type_Templates\Vessel_Types.json" />
   </ItemGroup>
 </Project>

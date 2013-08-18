@@ -30,9 +30,7 @@ namespace Madness_In_Space
 			output.vesselProperties.Add("Required Rooms",typeStats.requiredRooms);
 			output.vesselProperties.Add("Available Rooms",typeStats.availableRooms);
 			output.vesselProperties.Add("Type Description",typeStats.typeDescription);
-			
-			//allowed room list
-			output.vesselProperties.Add("Rooms", new Hashtable()); //Fill hash table using the RoomFactory
+			output.vesselProperties.Add("Rooms", new List<Room>());
 			
 			output.vesselProperties.Add("Bounds",new Bounding_Dimensions_Property(typeStats.maxXBounds,typeStats.maxYBounds,typeStats.maxZBounds));
 			
@@ -41,11 +39,21 @@ namespace Madness_In_Space
 			output.vesselProperties.Add("Structure", new Structure());
 			output.vesselProperties.Add("Hull", new Hull());
 			
-			output.vesselProperties.Add("Shield",new Shield()); //Only need shield is the right system is onboard
+			output.vesselProperties.Add("Shield",new Shield()); //Only need shield if the right system is onboard
 			
 
 			
 			return output;
+		}
+		
+		public void addRoom(Room room, Vessel vessel)
+		{
+			List<Room> roomList = (List<Room>)vessel.vesselProperties["Rooms"];
+			
+			roomList.Add(room);
+			
+			vessel.vesselProperties.Remove("Rooms");
+			vessel.vesselProperties.Add("Rooms", roomList);
 		}
 	}
 }

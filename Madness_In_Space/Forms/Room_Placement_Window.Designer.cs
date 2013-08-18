@@ -36,10 +36,12 @@
 			this.Room_Y_Dimension = new System.Windows.Forms.TrackBar();
 			this.Room_X_Dimension = new System.Windows.Forms.TrackBar();
 			this.Room_placement_group = new System.Windows.Forms.GroupBox();
+			this.Vessel_Z_Position = new System.Windows.Forms.TrackBar();
 			this.Vessel_Y_Position = new System.Windows.Forms.TrackBar();
 			this.Vessel_X_Position = new System.Windows.Forms.TrackBar();
 			this.X_plane_position_grid = new System.Windows.Forms.Panel();
 			this.Y_plane_position_grid = new System.Windows.Forms.Panel();
+			this.Y_plane_position_grid_image = new System.Windows.Forms.PictureBox();
 			this.Room_Type_Description = new System.Windows.Forms.Panel();
 			this.Vessel_Type_Description = new System.Windows.Forms.Label();
 			this.Vessel_Space_3D_Position = new System.Windows.Forms.Panel();
@@ -60,8 +62,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.Room_Y_Dimension)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Room_X_Dimension)).BeginInit();
 			this.Room_placement_group.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.Vessel_Z_Position)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Vessel_Y_Position)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Vessel_X_Position)).BeginInit();
+			this.Y_plane_position_grid.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.Y_plane_position_grid_image)).BeginInit();
 			this.Room_Type_Description.SuspendLayout();
 			this.Room_Description_Box.SuspendLayout();
 			this.SuspendLayout();
@@ -134,28 +139,39 @@
 			// 
 			// Room_placement_group
 			// 
+			this.Room_placement_group.Controls.Add(this.Vessel_Z_Position);
 			this.Room_placement_group.Controls.Add(this.Vessel_Y_Position);
 			this.Room_placement_group.Controls.Add(this.Vessel_X_Position);
-			this.Room_placement_group.Location = new System.Drawing.Point(219, 351);
+			this.Room_placement_group.Location = new System.Drawing.Point(219, 331);
 			this.Room_placement_group.Name = "Room_placement_group";
-			this.Room_placement_group.Size = new System.Drawing.Size(200, 167);
+			this.Room_placement_group.Size = new System.Drawing.Size(200, 187);
 			this.Room_placement_group.TabIndex = 4;
 			this.Room_placement_group.TabStop = false;
 			this.Room_placement_group.Text = "Room_placement_group";
 			// 
+			// Vessel_Z_Position
+			// 
+			this.Vessel_Z_Position.Location = new System.Drawing.Point(46, 136);
+			this.Vessel_Z_Position.Name = "Vessel_Z_Position";
+			this.Vessel_Z_Position.Size = new System.Drawing.Size(104, 45);
+			this.Vessel_Z_Position.TabIndex = 3;
+			this.Vessel_Z_Position.Scroll += new System.EventHandler(this.Vessel_Z_PositionScroll);
+			// 
 			// Vessel_Y_Position
 			// 
-			this.Vessel_Y_Position.Location = new System.Drawing.Point(46, 104);
+			this.Vessel_Y_Position.Location = new System.Drawing.Point(46, 85);
 			this.Vessel_Y_Position.Name = "Vessel_Y_Position";
 			this.Vessel_Y_Position.Size = new System.Drawing.Size(104, 45);
 			this.Vessel_Y_Position.TabIndex = 2;
+			this.Vessel_Y_Position.Scroll += new System.EventHandler(this.Vessel_Y_PositionScroll);
 			// 
 			// Vessel_X_Position
 			// 
-			this.Vessel_X_Position.Location = new System.Drawing.Point(46, 36);
+			this.Vessel_X_Position.Location = new System.Drawing.Point(46, 34);
 			this.Vessel_X_Position.Name = "Vessel_X_Position";
 			this.Vessel_X_Position.Size = new System.Drawing.Size(104, 45);
 			this.Vessel_X_Position.TabIndex = 0;
+			this.Vessel_X_Position.Scroll += new System.EventHandler(this.Vessel_X_PositionScroll);
 			// 
 			// X_plane_position_grid
 			// 
@@ -166,10 +182,19 @@
 			// 
 			// Y_plane_position_grid
 			// 
+			this.Y_plane_position_grid.Controls.Add(this.Y_plane_position_grid_image);
 			this.Y_plane_position_grid.Location = new System.Drawing.Point(219, 539);
 			this.Y_plane_position_grid.Name = "Y_plane_position_grid";
 			this.Y_plane_position_grid.Size = new System.Drawing.Size(280, 148);
 			this.Y_plane_position_grid.TabIndex = 6;
+			// 
+			// Y_plane_position_grid_image
+			// 
+			this.Y_plane_position_grid_image.Location = new System.Drawing.Point(3, 3);
+			this.Y_plane_position_grid_image.Name = "Y_plane_position_grid_image";
+			this.Y_plane_position_grid_image.Size = new System.Drawing.Size(274, 142);
+			this.Y_plane_position_grid_image.TabIndex = 0;
+			this.Y_plane_position_grid_image.TabStop = false;
 			// 
 			// Room_Type_Description
 			// 
@@ -203,7 +228,6 @@
 			this.vesseltypehere.TabIndex = 8;
 			this.vesseltypehere.Text = "vesseltypehere";
 			this.vesseltypehere.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.vesseltypehere.Click += new System.EventHandler(this.VesseltypehereClick);
 			// 
 			// Room_Budget_Label
 			// 
@@ -241,6 +265,7 @@
 			this.Add_Room_Button.TabIndex = 13;
 			this.Add_Room_Button.Text = "ADD ROOM";
 			this.Add_Room_Button.UseVisualStyleBackColor = true;
+			this.Add_Room_Button.Click += new System.EventHandler(this.Add_Room_ButtonClick);
 			// 
 			// button2
 			// 
@@ -340,12 +365,17 @@
 			((System.ComponentModel.ISupportInitialize)(this.Room_X_Dimension)).EndInit();
 			this.Room_placement_group.ResumeLayout(false);
 			this.Room_placement_group.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.Vessel_Z_Position)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Vessel_Y_Position)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Vessel_X_Position)).EndInit();
+			this.Y_plane_position_grid.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.Y_plane_position_grid_image)).EndInit();
 			this.Room_Type_Description.ResumeLayout(false);
 			this.Room_Description_Box.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.PictureBox Y_plane_position_grid_image;
+		private System.Windows.Forms.TrackBar Vessel_Z_Position;
 		private System.Windows.Forms.GroupBox Room_Description_Box;
 		private System.Windows.Forms.Label Room_Type_Description_Label;
 		private System.Windows.Forms.Label Vessel_Type_Description;
@@ -374,10 +404,7 @@
 		private System.Windows.Forms.Label Available_Rooms_Label;
 		private System.Windows.Forms.Label Vessel_Name_Indicator;
 		
-		void VesseltypehereClick(object sender, System.EventArgs e)
-		{
-			
-		}
+
 		
 
 	}
