@@ -7,8 +7,7 @@ namespace Madness_In_Space
 		//These attributes are not defined by system  type.
 		public Activated_Or_Deactivated_Property activatedBool = new Activated_Or_Deactivated_Property();
 		public On_Or_Off_Property turnedOn;
-		
-		
+				
 		//These attributes are determined by type.
 		public Activation_Power_Consumption_Property activationPowerConsumption;
 		public Maintain_Activation_Power_Consumption_Property maintainActivationPowerConsumption;

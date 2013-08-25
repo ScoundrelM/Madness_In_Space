@@ -55,7 +55,15 @@ namespace Madness_In_Space
 			vessel.vesselProperties.Remove("Rooms");
 			vessel.vesselProperties.Add("Rooms", roomList);
 		}
+		
+		public void addSystem(Vessel_System sysIn, Room roomIn)
+		{
+			List<Vessel_System> sysList = (List<Vessel_System>)roomIn.roomProperties["Systems"];
+			
+			sysList.Add(sysIn);
+			
+			roomIn.roomProperties.Remove("Systems");
+			roomIn.roomProperties.Add("Systems", sysIn);
+		}
 	}
 }
-
-

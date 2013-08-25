@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Madness_In_Space.JSON_Type_Templates
+namespace Madness_In_Space
 {
 	/// <summary>
 	/// Description of Room_Type_Setter.
@@ -20,14 +20,11 @@ namespace Madness_In_Space.JSON_Type_Templates
 		public string[] requiredSystems;
 		public string[] bannedSystems;
 		public string[] availableSystems;
-		
-		
+				
 		public string[] allInterfaces = new string[] {"Gravity Panel", "Power","Air Vent","Comms Point", "Waste Disposal"};
 		public string[] requiredInterfaces;
 		public string[] bannedInterfaces;
 		public string[] availableInterfaces;
-		
-		
 		
 		public Room_Type_Setter(string typeToSetTo)
 		{

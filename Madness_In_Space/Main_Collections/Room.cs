@@ -8,7 +8,7 @@ namespace Madness_In_Space
 	{
 		public Hashtable roomProperties;
 
-		public Room (Vessel_Factory vFactory)
+		public Room ()
 		{
 			roomProperties = new Hashtable ();
 		}
